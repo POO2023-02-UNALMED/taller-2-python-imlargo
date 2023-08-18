@@ -24,9 +24,6 @@ class Motor:
             self.tipo = tipo
             
 
-
-Auto("model 3", 33000, list(),"tesla", Motor(4, "electrico", 142), 341)
-
 class Auto:
     cantidadCreados = 0
     
