@@ -24,17 +24,19 @@ class Motor:
             self.tipo = tipo
             
 
+
+Auto("model 3", 33000, list(),"tesla", Motor(4, "electrico", 142), 341)
+
 class Auto:
     cantidadCreados = 0
     
-    def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
         self.marca = marca
         self.registro = registro
         self.motor = motor
-        Auto.cantidadCreados = cantidadCreados
     
     def cantidadAsientos(self):
         contador = 0
