@@ -27,13 +27,14 @@ class Motor:
 class Auto:
     cantidadCreados = 0
     
-    def __init__(self, modelo, precio, asientos, marca, motor, cantidadCreados):
-        Auto.cantidadCreados = cantidadCreados
+    def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
         self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
         self.marca = marca
+        self.registro = registro
         self.motor = motor
+        Auto.cantidadCreados = cantidadCreados
     
     def cantidadAsientos(self):
         contador = 0
